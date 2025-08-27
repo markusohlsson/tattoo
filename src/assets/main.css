@@ -1,0 +1,51 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --color-bg: #0F0F0F;
+  --color-bg-alt: #1C1C1C;
+  --color-text: #F5F5F5;
+  --color-accent: #E63946;
+  --color-muted: #C0C0C0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Staatliches', sans-serif;
+  color: var(--color-accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF4C5B; /* brighter red on hover */
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+
+
+/* Background (primary): #0F0F0F → near-black base
+
+Background (secondary): #1C1C1C → subtle section separation
+
+Primary text: #F5F5F5 → soft white for good readability
+
+Accent (tattoo vibe): #E63946 → deep blood-red for buttons, links, highlights
+
+Secondary accent: #C0C0C0 → metallic gray for borders/dividers/icons
+
+*/
