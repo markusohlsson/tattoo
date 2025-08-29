@@ -1,0 +1,86 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Open+Sans:wght@400;600&display=swap');
+@import url('./variables.css');
+
+/* Components */
+@import url('./components/herovideo.css');
+@import url('./components/timeline.css');
+@import url('./components/linksection.css');
+@import url('./components/foot.css');
+@import url('./components/navigation.css');
+
+/* Pages */
+@import url('./pages/home.css');
+@import url('./pages/portfolio.css');
+@import url('./pages/about.css'); 
+@import url('./pages/contact.css');
+
+.router-link-active {
+  color: var(--color-accent) !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+.container {
+  padding: var(--space-sm);
+  margin-top: var(--space-md);
+  padding-bottom: var(--space-3xl); 
+  background-color: var(--color-overlay);
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-heading);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+@media (max-width:768px) {
+  .container {
+    padding: 0;
+  }
+}

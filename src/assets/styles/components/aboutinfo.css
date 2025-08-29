@@ -1,0 +1,7 @@
+@import url('./infobox.css');
+@import url('./infolist.css');
+@import url('../variables.css');
+
+.about-text {
+    flex: 1;
+}

@@ -1,6 +1,15 @@
 <script setup>
 import Navigation from './components/Navigation.vue';
 import Foot from './components/Foot.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({      
+  duration: 800,
+    offset: 90,
+      once: false,
+      mirror: true,
+    })
 
 </script>
 

@@ -1,0 +1,90 @@
+@import url('../components/postercard.css');
+
+
+.about-me-columns {
+    max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-image img {
+  width: 450px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+.evst {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.title {
+    margin-bottom: var(--space-md);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.certificate-card {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;    
+}
+
+.certificate-card .subtitle {
+  font-size: var(--fs-base);
+  color: var(--color-text);
+  margin-bottom: var(--space-xl);
+}
+
+.certificate-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  transition: transform 0.3s ease;
+}
+
+.certificate-image img:hover {
+  transform: scale(1.02);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: var(--space-xl);
+}
+.about-section {
+    width:40%;
+}
+
+@media (max-width: 768px) {
+.about-me-columns{
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .evst {
+    flex-direction: column;
+  }
+
+  .about-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

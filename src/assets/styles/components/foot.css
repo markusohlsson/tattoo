@@ -1,0 +1,31 @@
+@import url('../variables.css');
+.footer-disclaimer {
+  text-align: center;
+  width: 100%;
+  margin-top: var(--space-sm);
+  font-style: italic;
+  opacity: 0.8;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-2xl);
+  background: var(--color-bg-alt);
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.footer-left {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+}
+
+.footer-right a {
+  margin-left: var(--space-md);
+  color: var(--color-accent);
+  transition: color 0.2s ease;
+}
+
+.footer-right a:hover {
+  color: var(--color-text);
+}

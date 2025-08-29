@@ -1,0 +1,111 @@
+@import url('../variables.css');
+
+/* ==========================
+   General Navigation
+   ========================== */
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: var(--color-overlay);
+  z-index: 111;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  box-sizing: border-box;
+}
+
+.navigation-left h1 {
+  margin: 0;
+  font-size: var(--fs-2xl);
+}
+
+.navigation-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ==========================
+   Hamburger (mobile) 
+   ========================== */
+.hamburger {
+  display: none; /* desktop hidden */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+/* ==========================
+   Mobile Menu Animation
+   ========================== */
+.slide-down-enter-from,
+.slide-down-leave-to {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.slide-down-enter-to,
+.slide-down-leave-from {
+  max-height: 500px; /* adjust for menu height */
+  opacity: 1;
+}
+
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* ==========================
+   Media Queries
+   ========================== */
+@media (max-width: 768px) {
+  .nav-container {
+    max-width: 100%;  /* full width on mobile */
+    padding: 0 1rem;  /* smaller padding */
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--color-overlay);
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}

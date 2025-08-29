@@ -1,1 +1,89 @@
-<template></template>
+<template>
+    <h2 style="text-align:center;">Contact Me</h2>
+  <form
+    class="contact-form"
+    method="POST"
+  >
+    <div
+      class="contact-form-row"
+    >
+      <input
+        id="name"
+        class="contact-form-input"
+        type="text"
+        name="name"
+        required
+        placeholder=" "
+      >
+      <label
+        class="contact-form-label"
+        for="name"
+      >Name</label>
+    </div>
+    <div
+      class="contact-form-row"
+    >
+      <input
+        id="email"
+        class="contact-form-input"
+        type="email"
+        name="email"
+        required
+        placeholder=" "
+      >
+      <label
+        class="contact-form-label"
+        for="email"
+      >Email</label>
+    </div>
+    <div
+      class="contact-form-row"
+    >
+      <input
+        id="subject"
+        class="contact-form-input"
+        type="text"
+        name="subject"
+        required
+        placeholder=" "
+      >
+      <label
+        class="contact-form-label"
+        for="subject"
+      >Subject</label>
+    </div>
+    <div
+      class="contact-form-row"
+    >
+      <textarea
+        id="message"
+        class="contact-form-textarea"
+        name="message"
+        required
+        placeholder=" "
+      />
+      <label
+        class="contact-form-label"
+        for="message"
+      >Message</label>
+    </div>
+    <input
+      type="hidden"
+      name="_next"
+      value="https://www.ohlsson.dev/contact/success"
+    >
+    <input
+      type="hidden"
+      name="_captcha"
+      value="false"
+    >
+    <button
+      type="submit"
+      class="btn"
+    >
+      Send Message
+    </button>
+  </form>
+</template>
+
+<style></style>

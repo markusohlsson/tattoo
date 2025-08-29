@@ -203,31 +203,20 @@ m64 -52 c12 -20 39 -7 51 24 15 39 39 29 55 -23 5 -18 2 -27 -14 -38 -29 -21
   </div>
 </template>
 
-<style>
-.load {
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  z-index: -1;
-}
+<style scoped>
 path {
-      stroke-dasharray: 3000;
-      stroke-dashoffset: 3000;
-      fill-opacity: 0;
-      animation: draw 4s linear forwards,
-                 fillIn 4s ease forwards 4s; /* starts after drawing */
-    }
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  fill-opacity: 0;
+  animation: draw 4s linear forwards, fillIn 4s ease forwards 4s;
+}
 
-    @keyframes draw {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
 
-    @keyframes fillIn {
-      to {
-        fill-opacity: 1;
-      }
-    }
+@keyframes fillIn {
+  to { fill-opacity: 1; }
+}
 
 </style>

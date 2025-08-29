@@ -1,0 +1,7 @@
+@import url('../variables.css');
+.load {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  z-index: -1;
+}

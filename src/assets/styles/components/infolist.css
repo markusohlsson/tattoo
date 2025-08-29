@@ -1,0 +1,10 @@
+@import url('../variables.css');
+.item-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-left h3 {
+  margin: 0;
+  font-size: var(--fs-md);
+}

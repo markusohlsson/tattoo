@@ -1,0 +1,4 @@
+@import url('../variables.css');
+.text-right {
+    text-align: end;
+}
