@@ -7,7 +7,11 @@
       <span>© 2025 Ohlsson Tattoo</span>
     </div>
     <div class="footer-right">
-      <a href="https://instagram.com/o.h.tattoo" target="_blank" rel="noopener">
+      <a
+        href="https://instagram.com/o.h.tattoo"
+        target="_blank"
+        rel="noopener"
+      >
         <InstagramIcon />
       </a>
       <a href="mailto:info@ohlssontattoo.com">
@@ -17,10 +21,6 @@
   </footer>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { InstagramIcon, MailIcon } from "lucide-vue-next"
 </script>
-
-<style>
-
-</style>

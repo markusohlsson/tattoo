@@ -11,9 +11,11 @@
   margin: var(--space-2xl) auto;
   padding: 2rem;
   border-radius: var(--radius-md);
+
     .about-text {
           flex: 1;
     }
+
     .about-text h2 {
   margin-bottom: var(--space-md);
   border-bottom: 2px solid var(--color-accent);
@@ -25,7 +27,7 @@
         width: auto;
         border-radius: var(--radius-md);
         object-fit: cover;
-        box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        box-shadow: 0 0 15px rgb(0 0 0 / 60%);
     }
 
 .about-text ul {
@@ -39,7 +41,7 @@
   justify-content: space-between; /* pushes years to right */
   align-items: center;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* subtle divider */
+  border-bottom: 1px solid rgb(255 255 255 / 10%); /* subtle divider */
 }
 
 .location {
@@ -68,7 +70,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   /* Stack image + text instead of side-by-side */
   .home-about {
     flex-direction: column;

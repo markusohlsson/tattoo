@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import InfoBox from '../components/InfoBox.vue';
 import InfoList from '../components/InfoList.vue';
 import { studios, events } from '../data/content';
@@ -9,9 +9,20 @@ const texts = [
 ]
 </script>
 <template>
-    <div class="about-text">
-        <InfoBox :title="'Who am i?'" :texts="texts" btn-text="More about me" btn-link="/about"/>
-        <InfoList :title="'Studios I’ve Worked At'" :items="studios" />
-        <InfoList :title="'Events I’ve Attended'" :items="events" />
-    </div>
+  <div class="about-text">
+    <InfoBox
+      :title="'Who am i?'"
+      :texts="texts"
+      btn-text="More about me"
+      btn-link="/about"
+    />
+    <InfoList
+      :title="'Studios I’ve Worked At'"
+      :items="studios"
+    />
+    <InfoList
+      :title="'Events I’ve Attended'"
+      :items="events"
+    />
+  </div>
 </template>

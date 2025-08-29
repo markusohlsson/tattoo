@@ -1,6 +1,9 @@
 <template>
   <div class="info-card">
-    <img :src="img" :alt="name" />
+    <img
+      :src="img"
+      :alt="name"
+    >
     <div class="card-info">
       <h3>{{ name }}</h3>
       <p>{{ location }}</p>
@@ -9,14 +12,11 @@
   </div>
 </template>
 
-<script setup lang="ts">
-defineProps<{
-  img: string
-  name: string
-  location: string
-  year: string | number | string[]
-}>()
+<script setup>
+defineProps({
+  img: { type: String, required: true },
+  name: { type: String, required: true },
+  location: { type: String, required: true },
+  year: { type: [String, Number, Array], required: true }
+});
 </script>
-
-<style>
-</style>

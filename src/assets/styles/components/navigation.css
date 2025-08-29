@@ -86,7 +86,7 @@
 /* ==========================
    Media Queries
    ========================== */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .nav-container {
     max-width: 100%;  /* full width on mobile */
     padding: 0 1rem;  /* smaller padding */

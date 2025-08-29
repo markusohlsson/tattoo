@@ -1,15 +1,24 @@
-<script setup lang="ts">
+<script setup>
 import { ref } from "vue"
 import { PlayIcon, PauseIcon } from "lucide-vue-next"
 
 // Props
-defineProps<{
-  title: string,
-  text: string,
-  videoSrc: string
-}>()
+defineProps({
+  title: {
+    type: String,
+    required: true
+  },
+  text: {
+    type: String,
+    required: true
+  },
+  videoSrc: {
+    type: String,
+    required: true
+  }
+})
 
-const videoEl = ref<HTMLVideoElement | null>(null)
+const videoEl = ref(null)
 const isPlaying = ref(true)
 const isHovering = ref(false)
 
@@ -33,7 +42,11 @@ const togglePlay = () => {
       <p>{{ text }}</p>
     </div>
 
-    <div class="intro-video" @mouseenter="isHovering = true" @mouseleave="isHovering = false">
+    <div
+      class="intro-video"
+      @mouseenter="isHovering = true"
+      @mouseleave="isHovering = false"
+    >
       <video
         ref="videoEl"
         :src="videoSrc"
@@ -42,17 +55,22 @@ const togglePlay = () => {
         loop
         playsinline
         class="video"
-      ></video>
+      />
 
-      <div class="pause-container" :class="{ 'hidden': !isHovering }">
-        <button class="pause-btn" @click="togglePlay">
-          <component class="pause-icon" :is="isPlaying ? PauseIcon : PlayIcon" />
+      <div
+        class="pause-container"
+        :class="{ 'hidden': !isHovering }"
+      >
+        <button
+          class="pause-btn"
+          @click="togglePlay"
+        >
+          <component
+            :is="isPlaying ? PauseIcon : PlayIcon"
+            class="pause-icon"
+          />
         </button>
       </div>
     </div>
   </section>
 </template>
-
-<style>
-
-</style>

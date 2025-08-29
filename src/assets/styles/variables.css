@@ -13,7 +13,7 @@ Secondary accent: #C0C0C0 → metallic gray for borders/dividers/icons
     --color-accent: #E63946;
     --color-accent-hover: #FF4C5B;
     --color-muted: #C0C0C0;
-    --color-overlay: rgba(0, 0, 0, 0.5);
+    --color-overlay: rgb(0 0 0 / 50%);
 
   /* Spacing */
     --space-xs: 0.375rem;    /* 6px */
@@ -44,7 +44,7 @@ Secondary accent: #C0C0C0 → metallic gray for borders/dividers/icons
     --fw-bold: 700;
     --fw-extrabold: 800;
 
-  /* Font Sizes*/
+  /* Font Sizes */
     --fs-xs: 0.75rem;    /* 12px */
     --fs-sm: 0.9rem;     /* 14.4px */
     --fs-base: 1rem;     /* 16px */

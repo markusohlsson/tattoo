@@ -14,14 +14,14 @@ AOS.init({
 </script>
 
 <template>
-  <Navigation/>
+  <Navigation />
   <div class="parallax">
-  <div class="content">
-    <router-view></router-view>
+    <div class="content">
+      <router-view />
     </div>
   </div>
 
-  <Foot/>
+  <Foot />
 </template>
 
 <style scoped>
@@ -39,6 +39,6 @@ AOS.init({
 .content {
   position: relative;
   z-index: 1; /* Places content above the background */
-  background-color: rgba(0, 0, 0, 0.8); /* Optional: adds a translucent background to content */
+  background-color: rgb(0 0 0 / 80%); /* Optional: adds a translucent background to content */
 }
 </style>

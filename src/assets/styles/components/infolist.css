@@ -1,4 +1,5 @@
 @import url('../variables.css');
+
 .item-left {
   display: flex;
   flex-direction: column;

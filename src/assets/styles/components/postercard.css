@@ -1,20 +1,17 @@
 @import url('../variables.css');
+
 .info-card {
   background: var(--color-bg-alt);
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
 }
 
 .info-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-}
-
-.info-card:hover img {
-    filter:grayscale(0)
+  box-shadow: 0 6px 18px rgb(0 0 0 / 12%);
 }
 
 .info-card img {
@@ -23,6 +20,10 @@
   object-fit: cover;
     filter:grayscale(1);
       transition: filter 0.3s ease;
+}
+
+.info-card:hover img {
+    filter:grayscale(0)
 }
 
 .card-info {

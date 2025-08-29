@@ -1,5 +1,7 @@
 <template>
-    <h2 style="text-align:center;">Contact Me</h2>
+  <h2 style="text-align:center;">
+    Contact Me
+  </h2>
   <form
     class="contact-form"
     method="POST"
@@ -85,5 +87,3 @@
     </button>
   </form>
 </template>
-
-<style></style>

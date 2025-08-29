@@ -1,5 +1,6 @@
 @import url('./load.css');
 @import url('../variables.css');
+
 .hero-container {
   position: relative;
   width: 100%;
@@ -21,16 +22,17 @@
   color: var(--color-text);
   z-index: 2;
 }
+
 .hero-title {
   font-size: var(--fs-hero);
   margin: 0;
 }
 
-@media (max-width: 768px) {
-
+@media (width <= 768px) {
 .hero-container {
   height: calc(100vh - 80px); /* subtract fixed nav height */
 }
+
   .hero-title {
     font-size:7rem;
   }

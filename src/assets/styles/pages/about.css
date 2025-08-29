@@ -15,12 +15,14 @@
   border-radius: var(--radius-md);
   object-fit: cover;
 }
+
 .evst {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
     justify-content: space-evenly;
 }
+
 .title {
     margin-bottom: var(--space-md);
     border-bottom: 2px solid var(--color-accent);
@@ -58,11 +60,12 @@
   gap: 2rem;
   margin-top: var(--space-xl);
 }
+
 .about-section {
     width:40%;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
 .about-me-columns{
       grid-template-columns: 1fr;
       text-align: center;
